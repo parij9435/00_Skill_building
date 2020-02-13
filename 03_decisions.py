@@ -1,8 +1,16 @@
 # if statements!
 
-like_coffee = input("do you like coffee? ")
+keep_going = ""
+while keep_going == "":
 
-if like_coffee == "yes":
-    print ("i like coffee too")
-else:
+    like_coffee = input("do you like coffee? ").lower()
 
+    if like_coffee == "yes" or like_coffee == "y":
+        print ("i like coffee too")
+    elif like_coffee == "no" or like_coffee =="n":
+        print("you are missing out")
+    else:
+        print ("i don't understand")
+
+    keep_going = input( "press <enter> to continue or any key to quit")
+    print()
